@@ -1,0 +1,10 @@
+[Unit]
+Description=Updates desktop brackground with Daily Bing Image
+
+[Service]
+ExecStart=bash $HOME/.bingdesktop/run.sh
+Type=oneshot
+RemainAfterExit=no
+
+[Install]
+WantedBy=multi-user.target
